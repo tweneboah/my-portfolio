@@ -28,7 +28,7 @@ class Jokes extends Component {
     render() { 
         const {setup, punchline} = this.state.joke;
         return ( 
-        <div className ='p-5 bg-danger text-white'>
+        <div className ='p-5  text-white jokes-background'>
          <h2>Random jokes for you</h2>
          <hr className='bg-success p-1'/>
         <p>{setup} <em className='text-warning'>{punchline}</em></p>
@@ -37,7 +37,7 @@ class Jokes extends Component {
         {
             this.state.jokes.map((joke) => {
                 const {id, setup, punchline} = joke;
-               return <p className='bg-info p-2' key ={id}>{setup} <em className='text-warning'>{punchline}</em></p>
+               return <p className='joke-text-background p-2' key ={id}>{setup} <em className='text-warning'>{punchline}</em></p>
             })
         }
         </div>
