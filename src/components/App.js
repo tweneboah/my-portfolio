@@ -20,16 +20,16 @@ class App extends Component {
           <NavbarComponent/>
           <hr className='bg-success p-1'/>
         <img src={profile} alt='profile' className='profile' />
-        <h1 className="text-danger">Hello!</h1>
-        <p>My name is David.</p>
+        <h1 className="text-danger">Hello There!</h1>
+        <p className='font-weight-bold'>My name is <em className='text-primary'>Emmanuel Tweneboah</em></p>
         <Title />
         <p>I'm always looking forward to working on meaningful projects.</p>
         {
           this.state.displayBio ? (
             <div>
-              <p>I live in San Francisco, and code every day.</p>
-              <p>My favorite language is JavaScript, and I think React.js is awesome.</p>
-              <p>Besides coding, I also love music and ramen!</p>
+              <p>Am a Developer and a Teacher . I live in China, and I code every day.</p>
+              <p>I use modern Technologies in my projects. My favourite languages include JavaScript, React Js, Node js, Mongodb and Express. (JavaScript FullStack Developer)</p>
+              <p>Besides coding, I also love music.</p>
               <button onClick={this.toggleDisplayBio}className='btn btn-danger btn-lg m-3'>Show less</button>
             </div>
           ) : (
